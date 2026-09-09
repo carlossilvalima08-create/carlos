@@ -1,0 +1,49 @@
+/* Reset Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout da Página (Sticky Footer Pattern) */
+body { 
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh; 
+} 
+
+main { 
+  flex: 1; 
+} 
+
+/* Cabeçalho */
+.cabecalho { 
+  background-color: #7e3e1c; 
+  padding: 15px 25px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+} 
+
+.cabecalho-link { 
+  color: #c70d0d; 
+  text-decoration: none; 
+} 
+
+/* Tipografia */
+h1 { 
+  color: #fa2e2e; 
+  font-size: 24px; 
+} 
+
+/* Componente de Cartão */
+.cartao {
+  width: 260px;
+  height: 200px;
+}
+
+.cartao-imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preencha o cartão sem distorcer */
+}
